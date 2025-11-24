@@ -22,6 +22,11 @@ fastify.setErrorHandler((error, request, reply) => {
   });
 });
 
+// Root route for Render and browser testing
+fastify.get('/', async () => {
+  return { message: "Film API is running" };
+});
+
 // Register all movie related routes into Fastify application
 fastify.register(movieRoutes);
 
