@@ -39,13 +39,15 @@ Mongoose-modellen finns i `models/movie.model.js`.
 
 ## 3. API Endpoints
 
-| Metod | Endpoint         | Beskrivning                         | Body krävs | 
-|-------|------------------|--------------------------------------|------------
-| GET   | /movies          | Hämtar alla filmer                   | Nej       |
-| GET   | /movies/:id      | Hämtar en specifik film via ID       | Nej       |
-| POST  | /movies          | Skapar en ny film                    | Ja        |
-| PUT   | /movies/:id      | Uppdaterar en befintlig film         | Ja        |
-| DELETE| /movies/:id      | Raderar en film via ID               | Nej       |
+## 3. API Endpoints
+
+| Metod  | Endpoint         | Body (JSON)                                              | Headers                                   | Beskrivning                              |
+|--------|------------------|-----------------------------------------------------------|---------------------------------------------|-------------------------------------------|
+| GET    | /movies          | Nej                                                      | Nej                                         | Hämtar alla filmer                        |
+| GET    | /movies/:id      | Nej                                                      | Nej                                         | Hämtar en specifik film via ID            |
+| POST   | /movies          | title, studio, releaseYear, rating, animated             | "Content-Type": "application/json"          | Skapar en ny film                         |
+| PUT    | /movies/:id      | title, studio, releaseYear, rating, animated             | "Content-Type": "application/json"          | Uppdaterar en befintlig film via ID       |
+| DELETE | /movies/:id      | Nej                                                      | Nej                                         | Raderar en film via ID                    |
 
 
 ### Exempel på POST-body
