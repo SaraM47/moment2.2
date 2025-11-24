@@ -39,8 +39,6 @@ Mongoose-modellen finns i `models/movie.model.js`.
 
 ## 3. API Endpoints
 
-## 3. API Endpoints
-
 | Metod  | Endpoint         | Body (JSON)                                              | Headers                                   | Beskrivning                              |
 |--------|------------------|-----------------------------------------------------------|---------------------------------------------|-------------------------------------------|
 | GET    | /movies          | Nej                                                      | Nej                                         | Hämtar alla filmer                        |
