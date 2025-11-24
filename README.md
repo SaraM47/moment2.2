@@ -10,11 +10,7 @@ hantera poster i en filmsamling. Du kan hämta alla filmer, film via ID, skapa n
 
 ---
 
-## 2. Installation
-
----
-
-## 3. Databasmodell (Movie)
+## 2. Databasmodell (Movie)
 
 Mongoose-modellen finns i `models/movie.model.js`.
 
@@ -41,15 +37,15 @@ Mongoose-modellen finns i `models/movie.model.js`.
 ````
 ---
 
-## 4. API Endpoints
+## 3. API Endpoints
 
-| Metod | Endpoint         | Beskrivning                         | Body krävs | Exempelbody |
-|-------|------------------|--------------------------------------|------------|--------------|
-| GET   | /movies          | Hämtar alla filmer                   | Nej        | —            |
-| GET   | /movies/:id      | Hämtar en specifik film via ID       | Nej        | —            |
-| POST  | /movies          | Skapar en ny film                    | Ja         | Se nedan     |
-| PUT   | /movies/:id      | Uppdaterar en befintlig film         | Ja         | Samma som POST |
-| DELETE| /movies/:id      | Raderar en film via ID               | Nej        | —            |
+| Metod | Endpoint         | Beskrivning                         | Body krävs | 
+|-------|------------------|--------------------------------------|------------
+| GET   | /movies          | Hämtar alla filmer                   | Nej       |
+| GET   | /movies/:id      | Hämtar en specifik film via ID       | Nej       |
+| POST  | /movies          | Skapar en ny film                    | Ja        |
+| PUT   | /movies/:id      | Uppdaterar en befintlig film         | Ja        |
+| DELETE| /movies/:id      | Raderar en film via ID               | Nej       |
 
 
 ### Exempel på POST-body
