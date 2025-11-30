@@ -6,7 +6,9 @@ const movieRoutes = require('./routes/movie.route');
 
 // Enable CORS for all origins
 fastify.register(cors, {
-  origin: '*',  
+  origin: '*',
+  methods: ['GET', 'POST', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 });
 
 // Global error handler that handles validation errors and server errors
