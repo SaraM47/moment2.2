@@ -1,7 +1,13 @@
 require('dotenv').config();
 const fastify = require('fastify')({ logger: true });
+const cors = require('@fastify/cors');   
 const connectDB = require('./db/database');
 const movieRoutes = require('./routes/movie.route');
+
+// Enable CORS for all origins
+fastify.register(cors, {
+  origin: '*',  
+});
 
 // Global error handler that handles validation errors and server errors
 fastify.setErrorHandler((error, request, reply) => {
